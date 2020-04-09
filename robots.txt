@@ -1,0 +1,2 @@
+Sitemap: https://alexmeninf.github.io/me/sitemap.xml
+User-agent: *
