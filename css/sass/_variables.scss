@@ -1,0 +1,32 @@
+// Colors
+$color-light: #fff;
+
+// Media querie
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+ ) !default;
+
+@mixin media($width, $type: min, $dimension: width) {
+  @if map_has_key($grid-breakpoints, $width) {
+    $width: map_get($grid-breakpoints, $width);
+  }
+
+  @if $type==max {
+    $width: $width - 1px;
+  }
+
+  @media only screen and (#{$type}-#{$dimension}: $width) {
+    @content;
+  }
+}
+
+%transition {
+  -webkit-transition: ease-in .3s;
+  -moz-transition: ease-in .3s;
+  -o-transition: ease-in .3s;
+  transition: ease-in .3s;
+}

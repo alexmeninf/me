@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="plugins/wow/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/all.css">
-	<link rel="stylesheet" type="text/css" href="css/me.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
@@ -22,7 +22,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h1 class="title wow zoomIn">Alexandre Menin</h1>
+
+						<h1 class="title">
+							<span class="text-wrapper">
+								<span class="line line1"></span>
+								<span class="letters letters-left">Alexandre</span>
+								<span class="letters letters-right">Menin</span>
+								<span class="line line2"></span>
+							</span>
+						</h1>
 
 						<ul class="list-social list-inline">
 							<li class="wow fadeInUp" data-wow-delay=".2s">
@@ -51,20 +59,20 @@
 			</div>
 		</section>
 
+
 		<footer>
-			<p class="copyright">&copy; <span class="date"></span> Alexandre Menin - Developed with <i
-					class="fa fa-heart"></i></p>
+			<p class="copyright wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+				&copy; <span class="date"></span> Alexandre Menin - Developed with
+				<i class="fa fa-heart"></i>
+			</p>
 		</footer>
 	</div>
 
 	<script src="plugins/jquery/jquery-3.4.1.min.js"></script>
+	<script src="js/anime.min.js"></script>
 	<script src="plugins/wow/js/wow.min.js"></script>
+	<script src="js/main.js"></script>
 
-	<script>
-		jQuery(function () {
-			new WOW().init();
-		});
-	</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163274717-1"></script>
