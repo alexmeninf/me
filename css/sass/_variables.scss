@@ -1,14 +1,13 @@
 // Colors
 $color-light: #fff;
+$color-dark: #272727;
 
 // Media querie
-$grid-breakpoints: (
-  xs: 0,
+$grid-breakpoints: (xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
- ) !default;
+  xl: 1200px) !default;
 
 @mixin media($width, $type: min, $dimension: width) {
   @if map_has_key($grid-breakpoints, $width) {

@@ -2,6 +2,12 @@ jQuery(function () {
 
   new WOW().init();
 
+  themeMode = () => {
+    $('#themeMode').click(function () {
+      $("body").toggleClass('white-theme');
+    });
+  }
+
   titleAnimate = () => {
     anime.timeline({
         loop: false
@@ -40,5 +46,6 @@ jQuery(function () {
       });
   }
 
+  themeMode();
   titleAnimate();
 });

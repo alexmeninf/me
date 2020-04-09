@@ -1,0 +1,19 @@
+.white-theme {
+  background-color: $color-light;
+  color: $color-dark;
+
+  .title,
+  .tg-list-item h4 {
+    color: lighten($color-dark, 10%);
+  }
+
+  .list-social {
+    li a {
+      color: lighten($color-dark, 10%);
+
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+}
