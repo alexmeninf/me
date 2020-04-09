@@ -33,6 +33,34 @@
   }
 }
 
+.switch-btn {
+  position: relative;
+
+  .on::after,
+  .off::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+  }
+
+  .on::after {
+    content: '|';
+    left: 14px;
+    font-size: 14px;
+    top: 3px;
+    color: #daffe0;
+  }
+
+  .off::after {
+    content: 'o';
+    right: 19px;
+    font-size: 20px;
+    top: -1px;
+    color: #969696;
+  }
+}
+
 .switch {
   display: none;
 
