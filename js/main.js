@@ -1,6 +1,10 @@
 jQuery(function () {
 
+  // animate 
   new WOW().init();
+
+  // get current year
+  $('.date').html(new Date().getFullYear());
 
   themeMode = () => {
     $('#themeMode').click(function () {

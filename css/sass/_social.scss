@@ -12,7 +12,29 @@
       transform: translateY(-5px);
 
       a {
-        color: $color-light;
+        color: $color-light !important;
+        box-shadow: 0 3px 9px -2px rgba(29, 29, 29, 0.72);
+
+
+        &.instagram {
+          background-image: linear-gradient(to right top, #f8c202, #ff7d22, #ff005b, #ef0099, #8203d3);
+          border: none;
+        }
+
+        &.facebook {
+          background-image: linear-gradient(to right top, #3b5998, #385ca5, #355eb3, #3261c0, #3063cd);
+          border: none;
+        }
+
+        &.twitter {
+          background-image: linear-gradient(to right top, #00acee, #02a5e4, #049fdb, #0698d1, #0892c8);
+          border: none;
+        }
+
+        &.github {
+          background-image: linear-gradient(to right top, #101111, #1f2020, #202222, #222525, #242727);
+          border: none;
+        }
       }
     }
 
@@ -23,6 +45,7 @@
       display: block;
       height: 52px;
       width: 52px;
+      transition: .2s all;
 
       >i {
         vertical-align: middle;
@@ -31,4 +54,12 @@
       }
     }
   }
+}
+
+.txt-social {
+  text-align: center;
+  border-top: 1px solid lighten($color-dark, 10%);
+  padding-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }

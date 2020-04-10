@@ -6,6 +6,7 @@
 html,
 body {
   background: $color-dark;
+  color: darken($color-light, 13%);
   @extend %transition;
 }
 
