@@ -6,6 +6,14 @@ jQuery(function () {
   // get current year
   $('.date').html(new Date().getFullYear());
 
+  setURL = () => {
+    $('a[href^="{{urlSite}}"]').each(function () {
+      var oldUrl = $(this).attr("href");
+      var newUrl = oldUrl.replace("{{urlSite}}", "https://alexmeninf.github.io/me/");
+      $(this).attr("href", newUrl);
+    });
+  }
+
   themeMode = () => {
     $('#themeMode').click(function () {
       $("body").toggleClass('white-theme');
@@ -50,6 +58,7 @@ jQuery(function () {
       });
   }
 
+  setURL();
   themeMode();
   titleAnimate();
 });

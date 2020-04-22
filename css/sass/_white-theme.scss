@@ -2,6 +2,10 @@
   background-color: $color-light;
   color: $color-dark;
 
+  .img-logo {
+    filter: invert(0);
+  }
+
   .title,
   .switch-list-item h4 {
     color: lighten($color-dark, 10%);
