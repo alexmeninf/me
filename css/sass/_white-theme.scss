@@ -2,6 +2,10 @@
   background-color: $color-light;
   color: $color-dark;
 
+  &:before {
+    background-color: rgba($color-light, .93);
+  }
+
   .img-logo {
     filter: invert(0);
   }

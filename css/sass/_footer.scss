@@ -1,9 +1,68 @@
 footer {
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 2.5rem;
+  z-index: 1;
+  position: relative;
+
+  @include media(lg) {
+    margin-top: 6rem;
+  }
 
   .copyright {
     color: #898888;
     margin-bottom: 0;
+  }
+}
+
+.photos {
+  position: relative;
+  bottom: -105px;
+  margin-top: 15rem;
+
+  @include media(lg) {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-top: 0;
+  }
+
+  img {
+    box-shadow: 0 0px 17px rgba(0, 0, 0, 0.39);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 1s all;
+    max-height: 240px;
+    width: auto;
+    filter: saturate(0.5);
+
+    &:nth-child(1) {
+      bottom: 51px;
+      right: 97px;
+      transform: rotate(-15deg);
+      z-index: 0;
+    }
+
+    &:nth-child(2) {
+      right: 0;
+      transform: rotate(23deg);
+      bottom: -96px;
+      z-index: 1;
+
+      @include media(md) {
+        bottom: -40px;
+      }
+    }
+
+    &:nth-child(3) {
+      right: 190px;
+      transform: rotate(-23deg);
+      bottom: -40px;
+      z-index: 2;
+
+      @include media(md) {
+        right: 230px;
+      }
+    }
   }
 }

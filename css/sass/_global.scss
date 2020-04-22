@@ -6,8 +6,22 @@
 html,
 body {
   background: $color-dark;
+  background-image: url('../../img/bg-site.jpg');
+  background-size: cover;
   color: darken($color-light, 13%);
+  overflow-x: hidden;
+  position: relative;
   @extend %transition;
+
+  &:before {
+    content: '';
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-dark, .9);
+  }
 }
 
 body {
