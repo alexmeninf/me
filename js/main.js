@@ -17,6 +17,12 @@ jQuery(function () {
   themeMode = () => {
     $('#themeMode').click(function () {
       $("body").toggleClass('white-theme');
+      
+      if ($("body").hasClass("white-theme")) {
+          $("meta[name=apple-mobile-web-app-status-bar-style]").attr("content", "default");
+      } else {
+          $("meta[name=apple-mobile-web-app-status-bar-style]").attr("content", "black");
+      }
     });
   }
 
